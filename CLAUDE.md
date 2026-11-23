@@ -6,7 +6,7 @@ Working instructions for this repository. Read this file first, then the documen
 
 An original, offline, single-player strategy game for desktop Chrome: move repair crews on a grid, collect supplies, build tideposts and reopen routes against one deterministic rival, over three missions with save, continue and replay. Strict TypeScript compiled to ES modules, a pure engine, native HTML and CSS, no runtime dependency.
 
-**Nothing is implemented yet.** The repository holds the plan, the delivery tooling and the backlog in epic #1. Commands marked planned below do not work yet. Do not describe a planned thing as working, and do not claim a passing baseline: there is none.
+**Only the scaffold exists, no product behaviour.** The repository holds the plan, the delivery tooling, the backlog in epic #1 and a runnable scaffold (toolchain, module layout, smoke tests, CI). The commands below run on the scaffold only. Do not describe a planned thing as working, and do not claim a passing baseline: there is none.
 
 ## Sources of truth
 
@@ -19,7 +19,7 @@ An original, offline, single-player strategy game for desktop Chrome: move repai
 | Project subagents, origin and local changes | [.claude/agency-agents/README.md](.claude/agency-agents/README.md) |
 | Ticket workflow and the step at which each role runs | [.claude/skills/implement-ticket/SKILL.md](.claude/skills/implement-ticket/SKILL.md), section "Agent roles" below |
 | How a ticket goes from the queue to a ready pull request, who may do what | "Delivery workflow" below |
-| UI and copy rules | [docs/ui-quality.md](docs/ui-quality.md) |
+| UI and copy rules, design tokens | [docs/ui-quality.md](docs/ui-quality.md), [docs/design-tokens.md](docs/design-tokens.md) |
 | Decisions the owner made, with dates | [docs/owner-decisions.md](docs/owner-decisions.md) |
 
 The plan wins for product design; the epic and tickets win for order and scope. A ticket that changes a contract fixes the plan in the same pull request.
@@ -39,11 +39,11 @@ Node 22. `npm ci` installs the pinned compiler; everything else is offline.
 
 | Purpose | Command | Status |
 |---|---|---|
-| Install | `npm ci` | planned: real with the scaffold |
-| Type check | `npm run typecheck` | planned: real with the scaffold |
-| Build | `npm run build` | planned: real with the scaffold |
-| Tests | `npm test` | planned: real with the scaffold |
-| Serve locally | `npm start` | planned: real with the scaffold (static shell), game from #4 |
+| Install | `npm ci` | real (scaffold) |
+| Type check | `npm run typecheck` | real (scaffold) |
+| Build | `npm run build` | real (scaffold) |
+| Tests | `npm test` | real (scaffold) |
+| Serve locally | `npm start` | real (scaffold, static shell), game from #4 |
 
 ## Architecture boundaries
 
@@ -115,7 +115,7 @@ How a ticket reaches the owner. Each piece is described in its own file; this pa
 - **Pull request:** [`.github/pull_request_template.md`](.github/pull_request_template.md). Tickets use [`.github/ISSUE_TEMPLATE/implementation-ticket.md`](.github/ISSUE_TEMPLATE/implementation-ticket.md).
 - **Labels:** `status:ready`, `status:blocked`, `status:in-progress`, `needs-decision`, `tracking` (parent container, never worked; its sub-issues are the work items).
 - **Changelog:** every ticket pull request adds one line under Unreleased in [CHANGELOG.md](CHANGELOG.md).
-- **UI and copy:** [docs/ui-quality.md](docs/ui-quality.md); the `ui-ux-pro-max` and `unslop` skills are in `.claude/skills/`.
+- **UI and copy:** [docs/ui-quality.md](docs/ui-quality.md); the `ui-ux-pro-max` and `unslop` skills are in `.claude/skills/`. Colours come from the shared design tokens in `public/tokens.css` ([docs/design-tokens.md](docs/design-tokens.md)); new UI adds no colour literals.
 - **Decisions:** [docs/owner-decisions.md](docs/owner-decisions.md). Security reports: [SECURITY.md](SECURITY.md).
 - **Merge and release:** only the owner merges and releases ([docs/RELEASING.md](docs/RELEASING.md)). An agent stops at a ready pull request.
 

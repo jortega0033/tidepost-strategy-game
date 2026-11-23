@@ -18,6 +18,8 @@ The owner made decisions 1 to 10 and 12 on 2026-11-22 for all repositories that 
 | 10 | Open decisions on tickets are settled with the ticket's stated default; where a ticket states none, the conservative option is taken and flagged in the issue. | decided by the owner | 2026-11-22 | The list below; the issues themselves |
 | 11 | Nothing is installed globally on the owner's PC for this project: Node is already there. The runtime has no dependency; `typescript` is the only development dependency, pinned in the lockfile. | recommended by the orchestrator, following the plan (TypeScript, bundled runtime, initial install allowed) | 2026-11-23 | `CLAUDE.md` "Commands", `.github/workflows/ci.yml` |
 | 12 | The ten UI rules in `docs/ui-quality.md` are binding, and the `ui-ux-pro-max` and `unslop` skills are installed in the repository and used for UI work and for copy. | decided by the owner | 2026-11-22 | `docs/ui-quality.md`, `.claude/skills/` |
+| 13 | Visual system: the Pipenzo Flow look tokens. | decided by the owner | 2026-11-23 | `public/tokens.css`, `docs/design-tokens.md` |
+| 14 | Token rules 14-D1 to 14-D4. | 14-D1 use of yellow decided by the owner; how it is drawn, and 14-D2 to 14-D4, recommended by the orchestrator and adopted under the owner's delegation of 2026-11-23 | 2026-11-23 | `docs/design-tokens.md`; applied in UI tickets |
 
 ## Open ticket decisions settled by default (entry 10)
 
@@ -32,4 +34,4 @@ The plan leaves these open. Each is a recommendation by the orchestrator, adopte
 | #5 | Browser test method | Headless Chrome started from `node --test` over `--remote-debugging-pipe`, no dependency; Linux CI only, skipped locally when Chrome is absent and failing in CI when it is absent. |
 | #5 | Digest in the browser | Web Crypto SHA-256 in the page, `node:crypto` in tests as the second implementation. |
 | #6 | Briefing texts | Written by the implementing session in the plain style of `docs/ui-quality.md` rule 10; the owner may reword them at merge. |
-| none | Licence | Not selected. No ticket depends on it and none adds a LICENSE. |
+| none | Licence | MIT, already on `main` (`LICENSE` and the README notice). No ticket changes it. |

@@ -13,6 +13,11 @@ Status: **only the scaffold exists, no product behaviour.** This page maps the b
 | Storage and replay | `src/storage/` | IndexedDB slot, campaign progress, export, import, replay | #5 |
 | Page | `src/ui/ and public/` | Board, controls, log, help, replay viewer | #4, #6 |
 | Local server | `scripts/serve.mjs` | Static files on one stable loopback origin | #7 (a first version with the scaffold) |
+| Build step | `scripts/build.mjs`, `package.json` | Copies `public/` into `dist/` after `tsc` | #7 (a first version with the scaffold) |
+| Shared stub | `src/not-implemented.ts` | Message for features not built yet; removed with its last use | #6 |
+| CI | `.github/workflows/ci.yml` | Hook and test jobs, Chrome step | #5 (a first version with the scaffold) |
+| Player and release documents | `README.md`, `docs/PLAYING.md`, `docs/release-verification.md`, `docs/RELEASING.md` | Launch, controls, limits, goals, recorded results | #7 |
+| Map and freeze points | `docs/architecture.md` | This page | every ticket |
 | Tests | `test/` | `node --test` on the compiled modules | every ticket |
 
 Dependency direction: `rival`, `missions` and `storage` depend on `engine` types; `ui` depends on all of them; `engine` imports nothing from the app.

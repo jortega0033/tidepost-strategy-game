@@ -6,7 +6,7 @@ Working instructions for this repository. Read this file first, then the documen
 
 An original, offline, single-player strategy game for desktop Chrome: move repair crews on a grid, collect supplies, build tideposts and reopen routes against one deterministic rival, over three missions with save, continue and replay. Strict TypeScript compiled to ES modules, a pure engine, native HTML and CSS, no runtime dependency.
 
-**Only the scaffold exists, no product behaviour.** The repository holds the plan, the delivery tooling, the backlog in epic #1 and a runnable scaffold (toolchain, module layout, smoke tests, CI). Commands marked planned below do not work yet. Do not describe a planned thing as working, and do not claim a passing baseline: there is none.
+**Only the scaffold exists, no product behaviour.** The repository holds the plan, the delivery tooling, the backlog in epic #1 and a runnable scaffold (toolchain, module layout, smoke tests, CI). The commands below run on the scaffold only. Do not describe a planned thing as working, and do not claim a passing baseline: there is none.
 
 ## Sources of truth
 

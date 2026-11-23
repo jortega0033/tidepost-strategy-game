@@ -34,4 +34,4 @@ The plan leaves these open. Each is a recommendation by the orchestrator, adopte
 | #5 | Browser test method | Headless Chrome started from `node --test` over `--remote-debugging-pipe`, no dependency; Linux CI only, skipped locally when Chrome is absent and failing in CI when it is absent. |
 | #5 | Digest in the browser | Web Crypto SHA-256 in the page, `node:crypto` in tests as the second implementation. |
 | #6 | Briefing texts | Written by the implementing session in the plain style of `docs/ui-quality.md` rule 10; the owner may reword them at merge. |
-| none | Licence | Not selected. No ticket depends on it and none adds a LICENSE. |
+| none | Licence | MIT, already on `main` (`LICENSE` and the README notice). No ticket changes it. |

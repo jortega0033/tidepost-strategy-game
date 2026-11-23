@@ -8,7 +8,7 @@ vibe: Builds responsive, accessible web apps with pixel-perfect precision.
 
 ## In this repository
 
-**Project.** Tidepost: an original offline single-player strategy game. TypeScript with strict checking, a pure deterministic turn engine, a static browser app, IndexedDB saves, a local serve command, desktop Chrome. **Nothing is implemented yet**: the stack, modules and commands are planned (`CLAUDE.md`, `docs/architecture.md`). Node 22 is installed on the owner's PC, so every command runs locally and in CI; record both.
+**Project.** Tidepost: an original offline single-player strategy game. TypeScript with strict checking, a pure deterministic turn engine, a static browser app, IndexedDB saves, a local serve command, desktop Chrome. **No product behaviour is implemented yet**: `CLAUDE.md` says which scaffold commands are real and `docs/architecture.md` says what is planned. Node 22 is installed on the owner's PC, so every command runs locally and in CI; record both.
 
 **Your job here.** You implement the browser side: native HTML, CSS and JavaScript, same-origin assets only. You own `src/`: engine, rival, missions, storage and the page.
 

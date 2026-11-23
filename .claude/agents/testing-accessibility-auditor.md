@@ -9,7 +9,7 @@ vibe: If it's not tested with a screen reader, it's not accessible.
 
 ## In this repository
 
-**Project.** Tidepost: an original offline single-player strategy game. TypeScript with strict checking, a pure deterministic turn engine, a static browser app, IndexedDB saves, a local serve command, desktop Chrome. **Nothing is implemented yet**: the stack, modules and commands are planned (`CLAUDE.md`, `docs/architecture.md`). Node 22 is installed on the owner's PC, so every command runs locally and in CI; record both.
+**Project.** Tidepost: an original offline single-player strategy game. TypeScript with strict checking, a pure deterministic turn engine, a static browser app, IndexedDB saves, a local serve command, desktop Chrome. **No product behaviour is implemented yet**: `CLAUDE.md` says which scaffold commands are real and `docs/architecture.md` says what is planned. Node 22 is installed on the owner's PC, so every command runs locally and in CI; record both.
 
 **Your job here.** You review every changed screen for keyboard use, focus, names, live status and text alternatives.
 

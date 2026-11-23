@@ -1,0 +1,19 @@
+{
+  "name": "tidepost",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Tidepost: an offline, single-player strategy game for desktop Chrome.",
+  "type": "module",
+  "engines": {
+    "node": ">=22 <23"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "build": "tsc && node scripts/build.mjs",
+    "test": "npm run build && node --test \"test/*.test.mjs\"",
+    "start": "node scripts/serve.mjs"
+  },
+  "devDependencies": {
+    "typescript": "7.0.2"
+  }
+}

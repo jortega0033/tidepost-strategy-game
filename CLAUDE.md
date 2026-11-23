@@ -6,7 +6,7 @@ Working instructions for this repository. Read this file first, then the documen
 
 An original, offline, single-player strategy game for desktop Chrome: move repair crews on a grid, collect supplies, build tideposts and reopen routes against one deterministic rival, over three missions with save, continue and replay. Strict TypeScript compiled to ES modules, a pure engine, native HTML and CSS, no runtime dependency.
 
-**Nothing is implemented yet.** The repository holds the plan, the delivery tooling and the backlog in epic #1. Commands marked planned below do not work yet. Do not describe a planned thing as working, and do not claim a passing baseline: there is none.
+**Only the scaffold exists, no product behaviour.** The repository holds the plan, the delivery tooling, the backlog in epic #1 and a runnable scaffold (toolchain, module layout, smoke tests, CI). Commands marked planned below do not work yet. Do not describe a planned thing as working, and do not claim a passing baseline: there is none.
 
 ## Sources of truth
 
@@ -39,11 +39,11 @@ Node 22. `npm ci` installs the pinned compiler; everything else is offline.
 
 | Purpose | Command | Status |
 |---|---|---|
-| Install | `npm ci` | planned: real with the scaffold |
-| Type check | `npm run typecheck` | planned: real with the scaffold |
-| Build | `npm run build` | planned: real with the scaffold |
-| Tests | `npm test` | planned: real with the scaffold |
-| Serve locally | `npm start` | planned: real with the scaffold (static shell), game from #4 |
+| Install | `npm ci` | real (scaffold) |
+| Type check | `npm run typecheck` | real (scaffold) |
+| Build | `npm run build` | real (scaffold) |
+| Tests | `npm test` | real (scaffold) |
+| Serve locally | `npm start` | real (scaffold, static shell), game from #4 |
 
 ## Architecture boundaries
 

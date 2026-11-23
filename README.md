@@ -9,3 +9,7 @@ Implementation is planned. The scope, architecture and acceptance criteria are i
 - [Implementation backlog and epic](https://github.com/jortega0033/tidepost-strategy-game/issues)
 
 Estimated implementation and verification effort is 20–31 engineering hours.
+
+## License
+
+[MIT](LICENSE) © 2026 Jake Ortega.

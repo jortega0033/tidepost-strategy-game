@@ -43,5 +43,5 @@ The owner accepted the goal and each suggestion below. They apply from the phase
 | Decision | Implemented in |
 |---|---|
 | The repository has a program goal above phase 1: the full Tidepost game and its engine, in six phases. | Program issue #35 |
-| The first release defers generated maps, editors and multiplayer. Suggested: keep that for M1 only. | Program issue #35 |
+| The first release defers generated maps, editors and multiplayer. Suggested: keep that for phase 1 only. | Program issue #35 |
 | All art, names and music stay original, as now. | Program issue #35 |

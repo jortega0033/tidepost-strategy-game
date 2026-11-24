@@ -35,3 +35,13 @@ The plan leaves these open. Each is a recommendation by the orchestrator, adopte
 | #5 | Digest in the browser | Web Crypto SHA-256 in the page, `node:crypto` in tests as the second implementation. |
 | #6 | Briefing texts | Written by the implementing session in the plain style of `docs/ui-quality.md` rule 10; the owner may reword them at merge. |
 | none | Licence | MIT, already on `main` (`LICENSE` and the README notice). No ticket changes it. |
+
+## Program decisions (owner, 2026-11-24)
+
+The owner accepted the goal and each suggestion below. They apply from the phase they name; the rules of `CLAUDE.md` hold for phase 1 as written.
+
+| Decision | Implemented in |
+|---|---|
+| The repository has a program goal above phase 1: the full Tidepost game and its engine, in six phases. | Program issue #35 |
+| The first release defers generated maps, editors and multiplayer. Suggested: keep that for M1 only. | Program issue #35 |
+| All art, names and music stay original, as now. | Program issue #35 |

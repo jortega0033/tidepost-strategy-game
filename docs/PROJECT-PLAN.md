@@ -1,5 +1,7 @@
 # Tidepost Strategy Game
 
+> This document specifies phase 1 of the program in [#35](https://github.com/jortega0033/tidepost-strategy-game/issues/35). Hour figures in it are early estimates for that phase; its open tickets add up to 54 to 82 hours (2026-11-24). Work that it defers is planned in the later phases only where the program names it.
+
 ## Product requirements
 
 Tidepost is an original, offline, single-player strategy game for desktop Chrome. After a spring surge breaks a chain of causeways, a volunteer repair crew must move supplies, install tideposts and reopen safe routes. A second crew competes for the same supply caches and build sites. The player directs a crew or pair of crews on a grid, checks the pending orders and advances the turn when ready.
